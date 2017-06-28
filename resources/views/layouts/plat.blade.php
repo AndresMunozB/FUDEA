@@ -26,8 +26,9 @@
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
             <div class="navbar-header">
-                <!-- Branding Image -->
+                <a class="navbar-brand" href="{{route('home')}} ">
                 <img alt="Brand" src="{{ asset('images/fudea.png') }}">
+                </a>
             </div>
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse" style="padding-left: 10em">
