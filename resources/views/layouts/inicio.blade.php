@@ -33,14 +33,15 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse" style="padding-left: 10em">
                 <!-- Left Side Of Navbar -->
                 <a href="/" class="btn navbar-btn @if($pagina == 'inicio')active @endif" role="button">Inicio</a>
-                <a href="/quienes" class="btn navbar-btn @if($pagina == 'quienes')active @endif" role="button">Quiénes somos</a>
-                <a href="/catastrofes" class="btn navbar-btn @if($pagina == 'catastrofes')active @endif" role="button">Catástrofes</a>
+                <a href="/convenios" class="btn navbar-btn @if($pagina == 'convenios')active @endif" role="button">Convenios</a>
+                <a href="/contacto" class="btn navbar-btn @if($pagina == 'contacto')active @endif" role="button">Contacto</a>
+                <a href="/desarrolladores" class="btn navbar-btn @if($pagina == 'desarrolladores')active @endif" role="button">Desarrolladores</a>
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-right">
                     <!-- Authentication Links -->
                     <a href="{{ route('login') }}" class="btn navbar-btn @if($pagina == 'login')active @endif">Iniciar sesión</a>
-                    <a href="{{ route('register') }}" class="btn navbar-btn @if($pagina == 'registro')active @endif">Registrarse</a>
+                    {{--<a href="{{ route('register') }}" class="btn navbar-btn @if($pagina == 'registro')active @endif">Registrarse</a>--}}
                 </ul>
             </div>
         </div>
