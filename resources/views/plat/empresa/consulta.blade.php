@@ -13,17 +13,21 @@ Medidas
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-primary">
                 
-                <div class="panel-heading text-center">Consultar socio</div>
-                <div class="panel-body text-center">
+                <div class="panel-heading text-center"><h1>Consultar socio</h1></div>
+                <div class="panel-body text-center" >
+                <br>
                     <form  class="form-inline" action=" {{ route('consulta_path')}} " method="POST">
                         {{csrf_field()}}
+
                         <div class="form-group">
                             <label for="rut">RUT:</label>
                             <input type="text" name="rut" class="form-control" id="rut" placeholder="12.345.678-9" oninput="formatRUT()" required autofocus>
                             <button type="submit" class="btn btn-primary">Consultar</button>
                         </div>
                     </form>
-                <div class="panel-footer">
+                <br><br>
+
+                <div class="panel-footer" style="height: 100px;">
 
                     @if($consulta == 'true')
                     <div class="alert alert-success">

@@ -35,13 +35,15 @@
                 <a href="/home" class="btn navbar-btn @if($pagina == 'inicio')active @endif" role="button">Inicio</a>
                 @role('admin')
                 <a href="/usuarios" class="btn navbar-btn @if($pagina == 'usuarios')active @endif" role="button">Usuarios</a>
-                <a href="/usuarios" class="btn navbar-btn @if($pagina == 'solicitudes')active @endif" role="button">Solicitudes</a>
+                <a href=" {{route('forms_path')}} " class="btn navbar-btn @if($pagina == 'solicitudes')active @endif" role="button">Solicitudes</a>
                 <a href="/usuarios" class="btn navbar-btn @if($pagina == 'convenios')active @endif" role="button">Convenios</a>
+                <a href=" {{route('create_form_path')}} " class="btn navbar-btn @if($pagina == 'formulario')active @endif" role="button">Formulario</a>
                 @endrole
                 @role('ejecutivo')
                 <a href="/usuarios" class="btn navbar-btn @if($pagina == 'socios')active @endif" role="button">Socios</a>
-                <a href="/usuarios" class="btn navbar-btn @if($pagina == 'solicitudes')active @endif" role="button">Solicitudes</a>
+                <a href=" {{route('forms_path')}}" class="btn navbar-btn @if($pagina == 'solicitudes')active @endif" role="button">Solicitudes</a>
                 <a href="/usuarios" class="btn navbar-btn @if($pagina == 'mensajes')active @endif" role="button">Mensajes</a>
+                <a href=" {{route('create_form_path')}} " class="btn navbar-btn @if($pagina == 'formulario')active @endif" role="button">Formulario</a>
                 @endrole
                 @role('socio')
                 
