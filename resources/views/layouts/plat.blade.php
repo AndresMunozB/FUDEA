@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>ONEMI - @yield('title')</title>
+    <title>FUDEA - UNIVERSIDAD SANTIAGO DE CHILE - @yield('title')</title>
 
     @include('layouts.styles')
     <style>
