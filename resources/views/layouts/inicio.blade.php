@@ -11,7 +11,6 @@
     <title>FUDEA - @yield('title')</title>
 
     @include('layouts.styles')
-</head>
 <style>
 
     body 
@@ -22,6 +21,7 @@
     }
 
 </style>
+</head>
 <body>
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">

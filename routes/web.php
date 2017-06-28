@@ -18,3 +18,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::name('hola')->get('/consulta','ConsultaController@index');
+Route::name('search_path')->post('/consulta','ConsultaController@search');
