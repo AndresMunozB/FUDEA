@@ -178,6 +178,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         Caffeinated\Shinobi\ShinobiServiceProvider::class,
 
+
     ],
 
     /*
@@ -227,6 +228,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Shinobi' => Caffeinated\Shinobi\Facades\Shinobi::class,
+        'Shinobi' => Caffeinated\Shinobi\Facades\Shinobi::class,
+        
 
     ],
 

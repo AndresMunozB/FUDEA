@@ -2,7 +2,6 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
-
 class CreateRolesTable extends Migration
 {
     /**
@@ -19,6 +18,8 @@ class CreateRolesTable extends Migration
             $table->text('description')->nullable();
             $table->timestamps();
         });
+        
+
     }
 
     /**
