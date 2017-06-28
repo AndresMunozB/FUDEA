@@ -15,7 +15,7 @@ Medidas
                 
                 <div class="panel-heading text-center">Consultar socio</div>
                 <div class="panel-body text-center">
-                    <form  class="form-inline" action=" {{ route('hola')}} " method="POST">
+                    <form  class="form-inline" action=" {{ route('consulta_path')}} " method="POST">
                         {{csrf_field()}}
                         <div class="form-group">
                             <label for="rut">RUT:</label>

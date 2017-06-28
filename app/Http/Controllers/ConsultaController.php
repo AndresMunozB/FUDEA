@@ -18,7 +18,7 @@ class ConsultaController extends Controller
     public function search(Request $request)        
     {
         $user =User::where('rut',$request->rut)->first();
-        if(is_null($user)){
+        if(is_null($user) or !($user->isRole('socio')) ){
             return view('plat.empresa.consulta')->with(['consulta' => 'false', 'rut' => $request->rut]);
         }
         else{
