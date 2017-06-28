@@ -9,11 +9,19 @@ Inicio
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-6 text-justify" style="color: white">
-            <h2>
-                <i>"Soy de la zona en donde se produjo el epicentro del terremoto, les cuento que para todos nosotros que vivimos el terremoto fue algo tan inmensamente terrible que no me gustaría que le pasara a nadie, afortunadamente (…) logramos salir de casa antes que se produjera el maremoto que nos afectó luego del terremoto, pero les contaré que Talcahuano, mi hermoso puerto, ya no existe"</i>
-            </h2>
-            <br><h4>Karin Espinoza, Concepción, Chile</h4>
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading text-center">
+                    SÚMATE: ¡SOMOS VÍA!
+                </div>
+                <div class="panel-body">
+                <p>La Fundación de Egresados y Amigos de la Universidad de Santiago de Chile (Fudea), tiene como fin fortalecer la identidad y pertenencia de quienes han sido formados en esta Casa de Estudios y de aquellos que comparten sus principios y valores.Fudea, a través de diversos ámbitos del conocimiento, promueve la cooperación mutua y permanente entre los Egresados, Amigos y la Universidad, en virtud del progreso sociocultural de nuestro país.</p>
+                </div>
+                <div class="panel-footer">
+                <center> <button class="btn btn-primary pull-center" > Hazte Socio!</button> </center> 
+                </div>
+
+            </div>
         </div>
     </div>
 </div>

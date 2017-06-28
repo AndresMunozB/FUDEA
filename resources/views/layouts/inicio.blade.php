@@ -12,6 +12,16 @@
 
     @include('layouts.styles')
 </head>
+<style>
+
+    body 
+    {
+        background-image: url("https://static1.squarespace.com/static/574472fbd51cd42eed21b47e/t/58f8d5a237c58152adaf3830/1492702628971/EAO-Fudea-Usach-Banner-%281%29.jpg?format=2500w");
+        background-size: 100% 100%;
+        background-attachment: fixed;
+    }
+
+</style>
 <body>
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
