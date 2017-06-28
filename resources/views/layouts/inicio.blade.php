@@ -8,10 +8,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>ONEMI - @yield('title')</title>
+    <title>FUDEA - @yield('title')</title>
 
     @include('layouts.styles')
-</head>
 <style>
 
     body 
@@ -22,26 +21,26 @@
     }
 
 </style>
+</head>
 <body>
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
             <div class="navbar-header">
                 <!-- Branding Image -->
-                <img src="{{ asset('images/onemi_logo.jpg') }}" class="nav-brand">
+                <img alt="Brand" src="{{ asset('images/fudea.png') }}">
             </div>
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse" style="padding-left: 10em">
                 <!-- Left Side Of Navbar -->
                 <a href="/" class="btn navbar-btn @if($pagina == 'inicio')active @endif" role="button">Inicio</a>
                 <a href="/convenios" class="btn navbar-btn @if($pagina == 'convenios')active @endif" role="button">Convenios</a>
-                <a href="/contacto" class="btn navbar-btn @if($pagina == 'contacto')active @endif" role="button">Contacto</a>
-                <a href="/desarrolladores" class="btn navbar-btn @if($pagina == 'desarrolladores')active @endif" role="button">Desarrolladores</a>
+                <a href=" {{route('create_form_path')}} " class="btn navbar-btn @if($pagina == 'formulario')active @endif" role="button">Formulario</a>
+                <a href="/catastrofes" class="btn navbar-btn @if($pagina == 'desarrolladores')active @endif" role="button">Desarrolladores</a>
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-right">
                     <!-- Authentication Links -->
                     <a href="{{ route('login') }}" class="btn navbar-btn @if($pagina == 'login')active @endif">Iniciar sesión</a>
-                    {{--<a href="{{ route('register') }}" class="btn navbar-btn @if($pagina == 'registro')active @endif">Registrarse</a>--}}
                 </ul>
             </div>
         </div>

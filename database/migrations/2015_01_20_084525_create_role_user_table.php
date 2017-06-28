@@ -20,6 +20,38 @@ class CreateRoleUserTable extends Migration
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
+        Caffeinated\Shinobi\Models\Role::create(['name' => 'Administrador', 'slug' => 'admin', 'description' => 'rol usuario admin']);
+        Caffeinated\Shinobi\Models\Role::create(['name' => 'Ejecutivo', 'slug' => 'ejecutivo', 'description' => 'rol usuario ejecutivo']);
+        Caffeinated\Shinobi\Models\Role::create(['name' => 'Socio', 'slug' => 'socio', 'description' => 'rol usuario socio']);
+        Caffeinated\Shinobi\Models\Role::create(['name' => 'Empresa', 'slug' => 'empresa', 'description' => 'rol usuario empresa']);
+
+        $admin = App\User::create([
+            'rut' => '12.345.678-9',
+            'password' => '$2y$10$y8U22b/Cqb2zren2oCGNdO01k2SM9tW3YwmYePC/TW/XzXqoOHgIK',
+            'name' => 'Administrador',
+        ]);
+
+        $ejecutivo = App\User::create([
+            'rut' => '19.646.487-5',
+            'password' => '$2y$10$y8U22b/Cqb2zren2oCGNdO01k2SM9tW3YwmYePC/TW/XzXqoOHgIK',
+            'name' => 'Ejecutivo',
+        ]);
+        $socio = App\User::create([
+            'rut' => '19.448.718-5',
+            'password' => '$2y$10$y8U22b/Cqb2zren2oCGNdO01k2SM9tW3YwmYePC/TW/XzXqoOHgIK',
+            'name' => 'Socio',
+        ]);
+
+        $empresa = App\User::create([
+            'rut' => '19.181.897-0',
+            'password' => '$2y$10$y8U22b/Cqb2zren2oCGNdO01k2SM9tW3YwmYePC/TW/XzXqoOHgIK',
+            'name' => 'Empresa',
+        ]);
+
+        $admin->assignRole(1);
+        $ejecutivo->assignRole(2);
+        $socio->assignRole(3);
+        $empresa->assignRole(4);
     }
 
     /**
