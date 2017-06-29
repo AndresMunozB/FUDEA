@@ -29,7 +29,7 @@ Desarrolladores
 
     <div class="item active">   
     <br> <h2><b> Andres Muñoz - (El machine) <br> <p> Full Stack </p> </b> </h2><br>
-      <img src="{{ asset('images/andres.jpg') }}" title="Andres Muñoz - (Machine)" width="400" height="400" alt="...">
+      <img src="{{ asset('images/andres.jpg') }}" title="Andres Muñoz - (Machine)" width="500" height="500" alt="...">
       <div class="carousel-caption">
       </div>
     </div>

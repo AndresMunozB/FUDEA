@@ -53,5 +53,5 @@ Route::name('edit_user_path')->get('/users/{user}/edit','UsuarioController@edit'
 Route::name('update_user_path')->put('/users/{user}', 'UsuarioController@update');
 Route::name('delete_user_path')->delete('/users/{user}','UsuarioController@delete');
 
-Route::name('register')->get('/register','UsuarioController@register')
+Route::name('register')->get('/register','UsuarioController@register');
 Auth::routes();
