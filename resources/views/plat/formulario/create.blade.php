@@ -32,7 +32,7 @@ Formulario
 						<div class="form-group row">
 							<div class="col-md-4">
 								<label for="name">Nombre:</label>
-								<input type="text" name="name" class="form-control" value="{{ old('name') }}">
+								<input type="text" name="name" class="form-control" value="{{ old('name') }}" placeholder="Nombre">
 								@if ($errors->has('name'))
                                     <span class="help-block">
                                         <strong>{{ $errors->first('name') }}</strong>
@@ -42,11 +42,11 @@ Formulario
 
 							<div class="col-md-4">
 								<label for="apellido_paterno">Apellido paterno:</label>
-								<input type="text" name="apellido_paterno" class="form-control" value="{{ old('apellido_paterno') }}">
+								<input type="text" name="apellido_paterno" class="form-control" value="{{ old('apellido_paterno') }}" placeholder="Apellido">
 							</div>							
 							<div class="col-md-4">
 								<label for="apellido_materno">Apellido materno:</label>
-								<input type="text" name="apellido_materno" class="form-control" value="{{ old('apellido_materno') }}">
+								<input type="text" name="apellido_materno" class="form-control" value="{{ old('apellido_materno') }}" placeholder="Apellido">
 							</div>
 						</div>
 						<!-- Segunda fila-->
@@ -57,7 +57,7 @@ Formulario
 							</div>							
 							<div class="col-md-4">
 								<label for="fecha_nacimiento">Fecha de nacimiento:</label>
-								<input id="fecha_nacimiento" type="date" class="form-control" name="fecha_nacimiento" value="{{ old('fecha_nacimiento') }}" required>
+								<input id="fecha_nacimiento" placeholder="12/09/1898" type="date" class="form-control" name="fecha_nacimiento" value="{{ old('fecha_nacimiento') }}" required>
 
                                 @if ($errors->has('fecha_nacimiento'))
                                     <span class="help-block">
@@ -67,25 +67,25 @@ Formulario
 							</div>
                         	<div class="col-md-4">
 								<label for="telefono">Teléfono fijo:</label>
-								<input type="tel" name="telefono" class="form-control" value="{{ old('telefono') }}">
+								<input type="tel" name="telefono"  placeholder="12345678" class="form-control" value="{{ old('telefono') }}">
 							</div>
 						</div>
 						<!-- Tercera fila-->
 						<div class="form-group row">
 							<div class="col-md-4">
 								<label for="celular">Celular:</label>
-								<input type="tel" name="celular" class="form-control" value="{{ old('celular') }}">
+								<input type="tel" name="celular" class="form-control" value="{{ old('celular') }}" placeholder="56968785086">
 							</div>
 							<div class="col-md-8">
 								<label for="email">Correo electrónico:</label>
-								<input type="email" name="email" class="form-control" value="{{ old('mail') }}">
+								<input type="email" name="email" class="form-control" value="{{ old('mail') }}" placeholder="correo@gmail.com">
 							</div>
 						</div>
 						<!-- Cuarta fila -->
 						<div class="form-group row">
 							<div class="col-md-12">
 								<label for="direccion">Dirección:</label>
-								<input type="text" name="direccion" class="form-control" value="{{ old('direccion') }}">
+								<input type="text" name="direccion" class="form-control" value="{{ old('direccion') }}" placeholder="Villa santa marta #1231">
 							</div>							
 						</div>
 						<!-- Quinta fila Datos académicos-->
@@ -98,11 +98,11 @@ Formulario
 						<div class="form-group row">
 							<div class="col-md-6">
 								<label for="universidad">Universidad:</label>
-								<input type="text" name="universidad" class="form-control" value="{{ old('universidad') }}">
+								<input type="text" name="universidad" placeholder="Unab" class="form-control" value="{{ old('universidad') }}">
 							</div>							
 							<div class="col-md-6">
 								<label for="carrera">Carrera:</label>
-								<input type="text" name="carrera" class="form-control" value="{{ old('carrera') }}">
+								<input type="text" name="carrera" class="form-control" value="{{ old('carrera') }}" placeholder="Medicina">
 							</div>
 						</div>
 						<!-- Quinta fila-->
@@ -235,11 +235,11 @@ Formulario
 							</div>							
 							<div class="col-md-5">
 								<label for="departamento">Departamento:</label>
-								<input type="text" name="departamento" class="form-control" value="{{ old('departamento') }}">
+								<input type="text" name="departamento" class="form-control" value="{{ old('departamento') }}" placeholder="1990">
 							</div>
 							<div class="col-md-4">
 								<label for="facultad">Facultad:</label>
-								<input type="text" name="facultad" class="form-control" value="{{ old('facultad') }}">
+								<input type="text" name="facultad" class="form-control" value="{{ old('facultad') }}" placeholder="Facultad de ingenieria">
 							</div>
 						</div>
 						<!-- Sexta fila Datos laborales-->
@@ -252,11 +252,11 @@ Formulario
 						<div class="form-group row">
 							<div class="col-md-6">
 								<label for="empresa">Empresa/Institución:</label>
-								<input type="text" name="empresa" class="form-control" value="{{ old('empresa') }}">
+								<input type="text" name="empresa" class="form-control" value="{{ old('empresa') }}" placeholder="Fudea">
 							</div>
 							<div class="col-md-6">
 								<label for="cargo">Cargo:</label>
-								<input type="text" name="cargo" class="form-control" value="{{ old('cargo') }}">
+								<input type="text" name="cargo" class="form-control" value="{{ old('cargo') }}" placeholder="Jefe">
 							</div>	
 						</div>
 						<!-- Octava fila-->
