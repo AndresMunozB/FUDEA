@@ -3,7 +3,6 @@
         <tr>
             <th>Rut</th>
             <th>Nombre</th>
-            <th>Tipo</th>
             <th></th>
 
         </tr>
@@ -11,24 +10,23 @@
         <tr>
             <td>{{ $form->rut }}</td>
             <td>{{ $form->name }}</td>
-            <td> tipo </td>
             <td>
                 <div class="pull-right">
                     
                     
-                    <a class="btn btn-primary btn-xs" href="{{ route('form_path', ['form' => $form]) }}">
-                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                    <a class="btn btn-primary btn-xs" href="{{ route('edit_form_path', ['form' => $form]) }}">
+                        <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>
                     </a>
 
-                    <a class="btn btn-primary btn-xs" href="{{ route('form_path', ['form' => $form]) }}">
-                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                    <a class="btn btn-success btn-xs" href="{{ route('agree_form_path', ['form' => $form]) }}">
+                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
                     </a>
 
-                    <form class="btn-xs pull-right" method="POST" action="{{ route('home') }}"> 
+                    <form class="btn-xs pull-right" method="POST" action="{{ route('delete_form_path',['form' => $form]) }}"> 
                         {{ csrf_field() }}
-                        <input type="hidden" name="id" value="{{ $form->id }}">
+                        {{ method_field('DELETE') }}
                         <button type="submit" class="btn btn-danger btn-xs">
-                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                         </button>
                     </form>
                    

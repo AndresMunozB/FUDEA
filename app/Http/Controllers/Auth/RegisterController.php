@@ -62,10 +62,25 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
-            'rut' => $data['rut'],
-            'password' => bcrypt($data['password']),
-        ]);
+        $user = new User;
+        $user->name = $data['name'];
+        $user->email = $data['email'];
+        $user->password = bcrypt($data['password']);
+        $user->rut = $data['rut'];
+        $user->save();
+        if($data['tipo'] == 'administrador'){
+            $user->assignRole(1);   
+        }
+        else if($data['tipo'] == 'ejecutivo'){
+            $user->assignRole(2);
+        }
+        else if($data['tipo'] == 'socio'){
+            $user->assignRole(3);
+        }
+        else if($data['tipo'] == 'empresa'){
+            $user->assignRole(4);
+        }
+        return $user;
+
     }
 }

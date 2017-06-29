@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Formulario;
 use App\Http\Requests\CreateFormRequest;
 use Auth;
+use App\User;
 class FormularioController extends Controller
 {
     public function index()
@@ -46,21 +47,36 @@ class FormularioController extends Controller
         }
 
     }
-    public function edit(Post $post)
+    public function edit(Formulario $form)
     {
         return view('plat.formulario.edit')->with(['form' => $form]);
     }
 
 
-    public function update(Post $post, UpdatePostRequest $request)
+    public function update(Formulario $form, CreateFormRequest $request)
     {
-        $form->update($request->only('title', 'description', 'url'));
-        return redirect()->route('post_path',['post' => $post->id]);
+        $form->update($request->all());
+        if(Auth::user()->isRole('admin') or Auth::user()->isRole('ejecutivo')){
+            return redirect()->route('forms_path');
+        }
+        else{
+            return redirect()->route('edit_form_path',['post' => $post->id]);
+        }
+        
     }
-    public function delete(Post $post)
+    public function delete(Formulario $form)
     {
         
-        $post->delete();
-        return redirect()->route('posts_path');
+        $form->delete();
+        return redirect()->route('forms_path');
+    }
+    public function agree(Formulario $form)
+    {
+        $user = new User;
+        $user->name = $form->name;
+        $user->email = $form->email;
+        $user->rut = $form->rut;
+        $user->password = bcrypt('secret');
+        $form->user()->associate($user);
     }
 }

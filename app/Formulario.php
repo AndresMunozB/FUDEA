@@ -34,4 +34,9 @@ class Formulario extends Model
         'cargo',
         'pago',
     ];
+
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
 }

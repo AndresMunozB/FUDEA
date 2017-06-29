@@ -1,6 +1,6 @@
 @extends('layouts.inicio')
 
-@php ($pagina = 'registro')
+@php ($pagina = 'usuarios')
 
 @section('title')
 Registrarse
@@ -10,7 +10,7 @@ Registrarse
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
-            <form class="form-horizontal" role="form" method="POST" action="{{ route('register') }}">
+            <form class="form-horizontal" role="form" action="{{ route('update_user_path',['user' => $user->id]) }}" method="POST">
                 {{ csrf_field() }}
                 <div class="panel panel-default">
                     <div class="panel-heading">Nuevo usuario</div>
