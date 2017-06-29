@@ -8,11 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-<<<<<<< HEAD
     <title>FUDEA - @yield('title')</title>
-=======
-    <title>FUDEA - UNIVERSIDAD SANTIAGO DE CHILE - @yield('title')</title>
->>>>>>> 3889316a2f1084d94fef0568e2575ebc24823ab6
 
     @include('layouts.styles')
     <style>
@@ -30,7 +26,7 @@
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="{{route('home')}} ">
+                <a href="{{route('raiz')}} ">
                 <img alt="Brand" src="{{ asset('images/fudea.png') }}">
                 </a>
             </div>

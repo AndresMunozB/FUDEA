@@ -27,7 +27,9 @@
         <div class="container">
             <div class="navbar-header">
                 <!-- Branding Image -->
+                <a href="{{route('raiz')}} ">
                 <img alt="Brand" src="{{ asset('images/fudea.png') }}">
+                </a>
             </div>
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse" style="padding-left: 10em">

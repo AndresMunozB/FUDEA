@@ -5,6 +5,7 @@
 @section('title')
 Formulario
 @endsection
+
 @php ($pagina = 'solicitudes')
 @section('content')
 <div class="container">

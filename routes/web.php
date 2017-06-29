@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', function () {
+Route::name('raiz')->get('/', function () {
     if(Auth::check()){
         return redirect()->route('home');
     }
