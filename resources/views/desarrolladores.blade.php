@@ -42,7 +42,7 @@ Desarrolladores
     </div>
 
     <div class="item">
-    <br> <h2><b> Cristian Sepulveda</b> <br> <p>Back-end Developer</p>  </h2><br>
+    <br> <h2><b> Cristian Sepulveda <br> <p>Back-end Developer</p>   </b></h2><br>
       <img src="{{ asset('images/cristian2.jpg') }}" title="Cristian Sepulveda - (-)" width="500" height="500" alt="...">
       <div class="carousel-caption">
       </div>
