@@ -28,28 +28,28 @@ Desarrolladores
   <div class="carousel-inner" role="listbox">
 
     <div class="item active">   
-    <br> <h2><b> Andres Muñoz - (El machine) <br> <p>Front-end Developer</p> </b> </h2><br>
-      <img src="{{ asset('images/andres.jpg') }}" title="Andres Muñoz - (Machine)" width="500" height="500" alt="...">
+    <br> <h2><b> Andres Muñoz - (El machine) <br> <p> Full Stack </p> </b> </h2><br>
+      <img src="{{ asset('images/andres.jpg') }}" title="Andres Muñoz - (Machine)" width="400" height="400" alt="...">
       <div class="carousel-caption">
       </div>
     </div>
 
    <div class="item">
-    <br> <h2><b> Cristian Espinoza <br> <p>Front-end Developer</p> </b></h2> <br> 
+    <br> <h2><b> Cristian Espinoza <br> <p> Front-end Developer </p> </b></h2> <br> 
       <img src="{{ asset('images/cristian.jpg') }}" title="Cristian Espinoza - (Huaso)" width="500" height="500" alt="...">
       <div class="carousel-caption">
       </div>
     </div>
 
     <div class="item">
-    <br> <h2><b> Cristian Sepulveda <br> <p>Back-end Developer</p>   </b></h2><br>
+    <br> <h2><b> Cristian Sepulveda <br> <p> Documentador </p>   </b></h2><br>
       <img src="{{ asset('images/cristian2.jpg') }}" title="Cristian Sepulveda - (-)" width="500" height="500" alt="...">
       <div class="carousel-caption">
       </div>
     </div>
 
     <div class="item">
-    <br> <h2><b> Javier Arredondo - (Ingeniero software) <br> <p>Front-end Developer</p>  </b></h2><br> 
+    <br> <h2><b> Javier Arredondo - (Ingeniero software) <br> <p> Front-end Developer </p>  </b></h2><br> 
       <img src="{{ asset('images/javier.jpg') }}" title="Javier Arredondo - (Ingeniero software)" width="500" height="500" alt="...">
       <div class="carousel-caption">      
       </div>
@@ -57,7 +57,7 @@ Desarrolladores
 
 
     <div class="item">
-    <br> <h2><b> Cristobal Donoso <br> <p>Back-end Developer</p> </b></h2><br>
+    <br> <h2><b> Cristobal Donoso <br> <p> Documentador </p> </b></h2><br>
       <img src="{{ asset('images/cristobal.jpg') }}" title="Cristobal Donoso - (-)" width="500" height="500" alt="...">
       <div class="carousel-caption">
       </div>
