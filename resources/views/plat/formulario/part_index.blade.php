@@ -19,6 +19,18 @@
                     <a class="btn btn-primary btn-xs" href="{{ route('form_path', ['form' => $form]) }}">
                         <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
                     </a>
+
+                    <a class="btn btn-primary btn-xs" href="{{ route('form_path', ['form' => $form]) }}">
+                        <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+                    </a>
+
+                    <form class="btn-xs pull-right" method="POST" action="{{ route('home') }}"> 
+                        {{ csrf_field() }}
+                        <input type="hidden" name="id" value="{{ $usuario->id }}">
+                        <button type="submit" class="btn btn-danger btn-xs">
+                            <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                        </button>
+                    </form>
                    
                 </div>
             </td>
