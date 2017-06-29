@@ -11,15 +11,18 @@ Inicio
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default text-center">
-                <div class="panel-heading text-center">Catástrofes recientes</div>
-                
+                <div class="panel-heading text-center">Resumen 1</div>
+                <div class="panel-body"></div>
+                <div class="panel-footer"></div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="panel panel-default text-center">
-                <div class="panel-heading text-center">Medidas que requieren ayuda</div>
+                <div class="panel-heading text-center">Resumen 2</div>
+                <div class="panel-body"></div>
+                <div class="panel-footer"></div>
                 
             </div>
         </div>

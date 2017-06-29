@@ -19,11 +19,15 @@ Route::name('raiz')->get('/', function () {
         return view('welcome');
     }
 });
-
-
-
 Auth::routes();
 Route::name('home')->get('/home', 'HomeController@index');
+Route::name('desarrolladores')->get('/desarrolladores',function(){
+    return view('desarrolladores');
+});
+
+
+
+//CONSULTA SOCIO (EMPRESA)
 Route::name('consulta_path')->get('/consulta','ConsultaController@index');
 Route::name('search_consulta_path')->post('/consulta','ConsultaController@search');
 

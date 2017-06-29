@@ -29,23 +29,27 @@ class CreateRoleUserTable extends Migration
             'rut' => '12.345.678-9',
             'password' => '$2y$10$y8U22b/Cqb2zren2oCGNdO01k2SM9tW3YwmYePC/TW/XzXqoOHgIK',
             'name' => 'Administrador',
+            'email' => 'andres.munoz.b@usach.cl',
         ]);
 
         $ejecutivo = App\User::create([
             'rut' => '19.646.487-5',
             'password' => '$2y$10$y8U22b/Cqb2zren2oCGNdO01k2SM9tW3YwmYePC/TW/XzXqoOHgIK',
             'name' => 'Ejecutivo',
+            'email' => 'af.munoz19@gmail.com',
         ]);
         $socio = App\User::create([
             'rut' => '19.448.718-5',
             'password' => '$2y$10$y8U22b/Cqb2zren2oCGNdO01k2SM9tW3YwmYePC/TW/XzXqoOHgIK',
             'name' => 'Socio',
+            'email' => 'javier.arredondo.co@usach.cl',
         ]);
 
         $empresa = App\User::create([
             'rut' => '19.181.897-0',
             'password' => '$2y$10$y8U22b/Cqb2zren2oCGNdO01k2SM9tW3YwmYePC/TW/XzXqoOHgIK',
             'name' => 'Empresa',
+            'email' => 'cristian@usach.cl',
         ]);
 
         $admin->assignRole(1);
