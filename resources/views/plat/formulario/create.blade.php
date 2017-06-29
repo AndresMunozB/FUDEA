@@ -78,7 +78,7 @@ Formulario
 							</div>
 							<div class="col-md-8">
 								<label for="email">Correo electrónico:</label>
-								<input type="email" name="email" class="form-control" value="{{ old('mail') }}" placeholder="correo@gmail.com">
+								<input type="email" name="email" class="form-control" value="{{ old('email') }}" placeholder="correo@gmail.com">
 							</div>
 						</div>
 						<!-- Cuarta fila -->

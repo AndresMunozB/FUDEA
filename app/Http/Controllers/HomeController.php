@@ -26,6 +26,9 @@ class HomeController extends Controller
         if (Auth::user()->isRole('empresa')){
             return redirect()->route('consulta_path');
         }
+        else if(Auth::user()->isRole('socio')){
+            return redirect()->route('consulta_path');
+        }
         return view('plat.home');
     }
 }

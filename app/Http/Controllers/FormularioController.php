@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Formulario;
-
+use App\Http\Requests\CreateFormRequest;
+use Auth;
 class FormularioController extends Controller
 {
     public function index()
@@ -33,11 +34,17 @@ class FormularioController extends Controller
     {
         return view('plat.formulario.create');
     }
-    public function store(Request $request)   
+    public function store(CreateFormRequest $request)   
     {
 
         $form = Formulario::create($request->all());
-        return redirect()->route('forms_path');
+        if(Auth::check()){
+            return redirect()->route('forms_path');
+        }
+        else{
+            return redirect()->route('raiz');
+        }
+
     }
     public function edit(Post $post)
     {
