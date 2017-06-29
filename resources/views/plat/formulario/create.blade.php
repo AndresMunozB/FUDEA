@@ -1,6 +1,6 @@
 @extends(Auth::check() ? 'layouts.plat' : 'layouts.inicio')
 @php ($pagina = 'formulario')
-
+ <!-- Debería ir hazte socio 77-->
 @section('title')
 Formulario
 @endsection
@@ -23,7 +23,12 @@ Formulario
 						{{ csrf_field() }}
 					<div class="panel-heading">Hazte socio </div>
 					<div class="panel-body">
-						<!-- Primera fila-->
+						<div class="form-group row">
+							<div class="col-md-12">
+								<label> <h2>Datos personales</h2> </label>
+							</div>
+						</div>
+						<!-- Primera fila Datos personales-->
 						<div class="form-group row">
 							<div class="col-md-4">
 								<label for="rut">Nombre:</label>
@@ -55,22 +60,36 @@ Formulario
                                     </span>
                                 @endif
 							</div>
-							<div class="col-md-4">
-                            <label for="ocupacion" class="col-md-4 control-label">Ocupación:</label>
-                                <select class="form-control" name="ocupacion">
-                                    <option value="Trabajador">Trabajador</option>
-                                    <option value="Estudiante">Estudiante</option>
-                                </select>
-                        	</div>
+                        	<div class="col-md-4">
+								<label for="rut">Teléfono fijo:</label>
+								<input type="text" name="telefono" class="form-control" value="{{ old('telefono') }}">
+							</div>
 						</div>
 						<!-- Tercera fila-->
+						<div class="form-group row">
+							<div class="col-md-4">
+								<label for="name">Celular:</label>
+								<input type="text" name="celular" class="form-control" value="{{ old('celular') }}">
+							</div>
+							<div class="col-md-8">
+								<label for="name">Correo electrónico:</label>
+								<input type="text" name="mail" class="form-control" value="{{ old('mail') }}">
+							</div>
+						</div>
+						<!-- Cuarta fila -->
 						<div class="form-group row">
 							<div class="col-md-12">
 								<label for="direccion">Dirección:</label>
 								<input type="text" name="direccion" class="form-control" value="{{ old('direccion') }}">
 							</div>							
 						</div>
-						<!-- Cuarta fila-->
+						<!-- Quinta fila Datos académicos-->
+						<div class="form-group row">
+							<div class="col-md-12">
+								<label> <h2>Datos académicos</h2> </label>
+							</div>
+						</div>
+						<!-- Sexta fila-->
 						<div class="form-group row">
 							<div class="col-md-6">
 								<label for="rut">Universidad:</label>
@@ -209,23 +228,36 @@ Formulario
 									<option value="1900">1900</option>
 								</select>
 							</div>							
-							<div class="col-md-9">
-								<label for="name">Correo electrónico:</label>
-								<input type="text" name="mail" class="form-control" value="{{ old('mail') }}">
+							<div class="col-md-5">
+								<label for="name">Departamento:</label>
+								<input type="text" name="departamento" class="form-control" value="{{ old('departamento') }}">
+							</div>
+							<div class="col-md-4">
+								<label for="name">Facultad:</label>
+								<input type="text" name="facultad" class="form-control" value="{{ old('facultad') }}">
 							</div>
 						</div>
-						<!-- Sexta fila-->
+						<!-- Sexta fila Datos laborales-->
+						<div class="form-group row">
+							<div class="col-md-12">
+								<label> <h2>Datos laborales</h2> </label>
+							</div>
+						</div>
+						<!-- Septima fila -->
+						<div class="form-group row">
+							<div class="col-md-6">
+								<label for="rut">Empresa/Institución:</label>
+								<input type="text" name="empresa" class="form-control" value="{{ old('empresa') }}">
+							</div>
+							<div class="col-md-6">
+								<label for="rut">Cargo:</label>
+								<input type="text" name="cargo" class="form-control" value="{{ old('cargo') }}">
+							</div>	
+						</div>
+						<!-- Octava fila-->
 						<div class="form-group row">
 							<div class="col-md-4">
-								<label for="rut">Teléfono:</label>
-								<input type="text" name="telefono" class="form-control" value="{{ old('telefono') }}">
-							</div>							
-							<div class="col-md-4">
-								<label for="name">Celular:</label>
-								<input type="text" name="celular" class="form-control" value="{{ old('celular') }}">
-							</div>
-							<div class="col-md-4">
-                            	<label for="ocupacion" class="col-md-4 control-label">Pago:</label>
+                            	<label for="ocupacion" class="col-md-8 control-label">Método de pago:</label>
                                 <select class="form-control" name="pago">
                                    	<option value="Efectivo">Efectivo</option>
                                     <option value="Tarjeta de debito">Tarjeta de debito</option>
