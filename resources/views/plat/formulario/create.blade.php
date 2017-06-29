@@ -31,16 +31,16 @@ Formulario
 						<!-- Primera fila Datos personales-->
 						<div class="form-group row">
 							<div class="col-md-4">
-								<label for="rut">Nombre:</label>
-								<input type="text" name="primer_nombre" class="form-control" value="{{ old('primer_nombre') }}">
+								<label for="name">Nombre:</label>
+								<input type="text" name="name" class="form-control" value="{{ old('name') }}">
 							</div>							
 
 							<div class="col-md-4">
-								<label for="rut">Apellido paterno:</label>
+								<label for="apellido_paterno">Apellido paterno:</label>
 								<input type="text" name="apellido_paterno" class="form-control" value="{{ old('apellido_paterno') }}">
 							</div>							
 							<div class="col-md-4">
-								<label for="name">Apellido materno:</label>
+								<label for="apellido_materno">Apellido materno:</label>
 								<input type="text" name="apellido_materno" class="form-control" value="{{ old('apellido_materno') }}">
 							</div>
 						</div>
@@ -51,7 +51,7 @@ Formulario
 								<input type="text" name="rut" class="form-control" value="{{ old('rut') }}" placeholder="12.345.678-9">
 							</div>							
 							<div class="col-md-4">
-								<label for="name">Fecha de nacimiento:</label>
+								<label for="fecha_nacimiento">Fecha de nacimiento:</label>
 								<input id="fecha_nacimiento" type="date" class="form-control" name="fecha_nacimiento" value="{{ old('fecha_nacimiento') }}" required>
 
                                 @if ($errors->has('fecha_nacimiento'))
@@ -61,19 +61,19 @@ Formulario
                                 @endif
 							</div>
                         	<div class="col-md-4">
-								<label for="rut">Teléfono fijo:</label>
-								<input type="text" name="telefono" class="form-control" value="{{ old('telefono') }}">
+								<label for="telefono">Teléfono fijo:</label>
+								<input type="tel" name="telefono" class="form-control" value="{{ old('telefono') }}">
 							</div>
 						</div>
 						<!-- Tercera fila-->
 						<div class="form-group row">
 							<div class="col-md-4">
-								<label for="name">Celular:</label>
-								<input type="text" name="celular" class="form-control" value="{{ old('celular') }}">
+								<label for="celular">Celular:</label>
+								<input type="tel" name="celular" class="form-control" value="{{ old('celular') }}">
 							</div>
 							<div class="col-md-8">
-								<label for="name">Correo electrónico:</label>
-								<input type="text" name="mail" class="form-control" value="{{ old('mail') }}">
+								<label for="mail">Correo electrónico:</label>
+								<input type="email" name="mail" class="form-control" value="{{ old('mail') }}">
 							</div>
 						</div>
 						<!-- Cuarta fila -->
@@ -92,19 +92,19 @@ Formulario
 						<!-- Sexta fila-->
 						<div class="form-group row">
 							<div class="col-md-6">
-								<label for="rut">Universidad:</label>
+								<label for="universidad">Universidad:</label>
 								<input type="text" name="universidad" class="form-control" value="{{ old('universidad') }}">
 							</div>							
 							<div class="col-md-6">
-								<label for="name">Carrera:</label>
+								<label for="carrera">Carrera:</label>
 								<input type="text" name="carrera" class="form-control" value="{{ old('carrera') }}">
 							</div>
 						</div>
 						<!-- Quinta fila-->
 						<div class="form-group row">
 							<div class="col-md-3">
-								<label for="name">Año de egreso:</label>
-								<select class="form-control" name="egreso">
+								<label for="egreso">Año de egreso:</label>
+								<select class="form-control" name="egreso" onmousedown="if(this.options.length>8){this.size=8;}"  onchange='this.size=0;' onblur="this.size=0;">
 									<option value="2020">2020</option>
 									<option value="2019">2019</option>
 									<option value="2018">2018</option>
@@ -229,11 +229,11 @@ Formulario
 								</select>
 							</div>							
 							<div class="col-md-5">
-								<label for="name">Departamento:</label>
+								<label for="departamento">Departamento:</label>
 								<input type="text" name="departamento" class="form-control" value="{{ old('departamento') }}">
 							</div>
 							<div class="col-md-4">
-								<label for="name">Facultad:</label>
+								<label for="facultad">Facultad:</label>
 								<input type="text" name="facultad" class="form-control" value="{{ old('facultad') }}">
 							</div>
 						</div>
@@ -246,23 +246,23 @@ Formulario
 						<!-- Septima fila -->
 						<div class="form-group row">
 							<div class="col-md-6">
-								<label for="rut">Empresa/Institución:</label>
+								<label for="empresa">Empresa/Institución:</label>
 								<input type="text" name="empresa" class="form-control" value="{{ old('empresa') }}">
 							</div>
 							<div class="col-md-6">
-								<label for="rut">Cargo:</label>
+								<label for="cargo">Cargo:</label>
 								<input type="text" name="cargo" class="form-control" value="{{ old('cargo') }}">
 							</div>	
 						</div>
 						<!-- Octava fila-->
 						<div class="form-group row">
 							<div class="col-md-4">
-                            	<label for="ocupacion" class="col-md-8 control-label">Método de pago:</label>
+                            	<label for="pago" class="col-md-8 control-label">Método de pago:</label>
                                 <select class="form-control" name="pago">
-                                   	<option value="Efectivo">Efectivo</option>
-                                    <option value="Tarjeta de debito">Tarjeta de debito</option>
-                                    <option value="TransferenciaElectronica">Transferencia electronica</option>
-                                    <option value="Cheque">Cheque</option>
+                                   	<option value="efectivo">Efectivo</option>
+                                    <option value="debito">Tarjeta de debito</option>
+                                    <option value="transferencia">Transferencia electronica</option>
+                                    <option value="cheque">Cheque</option>
                                 </select>
                         	</div>
 						</div>
@@ -280,7 +280,6 @@ Formulario
 <div class="container">
 	<div class="row">
         <div class="col-md-8 col-md-offset-2">			
-			<form action="{{ route('store_form_path') }}" method="POST">
 				<div class="panel panel-default">
 					<div class="panel-heading">Consideraciones, Obligaciones y Responsabilidades</div>
 					<div class="panel-body">
@@ -300,7 +299,6 @@ Formulario
 				    </p>
 				    </div>
 				</div>
-			</form>
 		</div>
 	</div>
 </div>

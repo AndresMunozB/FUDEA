@@ -15,6 +15,23 @@ class Formulario extends Model
      */
     protected $fillable = [
         'name',
-        'rut', 
+        'apellido_paterno',
+        'apellido_materno',
+        'rut',
+        'fecha_nacimiento',
+        'telefono',
+        'celular',
+        'email',
+        'direccion',
+
+        'universidad',
+        'carrera',
+        'egreso',
+        'departamento',
+        'facultad',
+
+        'empresa',
+        'cargo',
+        'pago',
     ];
 }
