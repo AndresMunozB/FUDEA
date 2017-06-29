@@ -16,7 +16,7 @@
 						</ul>
 					</div>
 					@endif
-						{{ csrf_field() }}
+					{{ csrf_field() }}
 					<div class="panel-heading">Formulario </div>
 					<div class="panel-body">
 						<div class="form-group row">

@@ -33,3 +33,7 @@ Route::name('form_path')->get('/forms/{form}', 'FormularioController@show');
 Route::name('edit_form_path')->get('/forms/{form}/edit', 'FormularioController@edit');
 Route::name('update_form_path')->put('/forms/{form}', 'FormularioController@update');
 Route::name('delete_form_path')->delete('forms/{form}','FormularioController@delete');
+
+
+//USUARIO
+Route::name('users_path')->get('/users','UsuarioController@index');
