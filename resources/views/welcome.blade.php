@@ -15,7 +15,7 @@ Inicio
                     SÚMATE: ¡SOMOS VÍA!
                 </div>
                 <div class="panel-body">
-                <p>La Fundación de Egresados y Amigos de la Universidad Santiago de Chile (Fudea), tiene como fin fortalecer la identidad y pertenencia de quienes han sido formados en esta Casa de Estudios y de aquellos que comparten sus principios y valores.Fudea, a través de diversos ámbitos del conocimiento, promueve la cooperación mutua y permanente entre los Egresados, Amigos y la Universidad, en virtud del progreso sociocultural de nuestro país.</p>
+                <p>La fundación de egresados y amigos de la Universidad de Santiago de Chile (Fudea), tiene como fin fortalecer la identidad y pertenencia de quienes han sido formados en esta casa de estudios y de aquellos que comparten sus principios y valores.Fudea, a través de diversos ámbitos del conocimiento, promueve la cooperación mutua y permanente entre los egresados, amigos y la Universidad, en virtud del progreso sociocultural de nuestro país.</p>
                 </div>
                 <div class="panel-footer">
                 <a href="{{route('create_form_path')}}"><center> <button class="btn btn-primary pull-center" > ¡Hazte Socio!</button> </center> </a>
