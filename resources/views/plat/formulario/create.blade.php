@@ -33,6 +33,11 @@ Formulario
 							<div class="col-md-4">
 								<label for="name">Nombre:</label>
 								<input type="text" name="name" class="form-control" value="{{ old('name') }}">
+								@if ($errors->has('name'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('name') }}</strong>
+                                    </span>
+                                @endif
 							</div>							
 
 							<div class="col-md-4">
@@ -72,8 +77,8 @@ Formulario
 								<input type="tel" name="celular" class="form-control" value="{{ old('celular') }}">
 							</div>
 							<div class="col-md-8">
-								<label for="mail">Correo electrónico:</label>
-								<input type="email" name="mail" class="form-control" value="{{ old('mail') }}">
+								<label for="email">Correo electrónico:</label>
+								<input type="email" name="email" class="form-control" value="{{ old('mail') }}">
 							</div>
 						</div>
 						<!-- Cuarta fila -->

@@ -26,7 +26,7 @@
 
                     <form class="btn-xs pull-right" method="POST" action="{{ route('home') }}"> 
                         {{ csrf_field() }}
-                        <input type="hidden" name="id" value="{{ $usuario->id }}">
+                        <input type="hidden" name="id" value="{{ $form->id }}">
                         <button type="submit" class="btn btn-danger btn-xs">
                             <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
                         </button>
