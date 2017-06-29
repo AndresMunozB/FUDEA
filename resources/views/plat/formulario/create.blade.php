@@ -21,13 +21,8 @@ Hazte socio
 						</ul>
 					</div>
 					@endif
-<<<<<<< HEAD
-					{{ csrf_field() }}
-					<div class="panel-heading">Formulario </div>
-=======
 						{{ csrf_field() }}
 					<div class="panel-heading">Hazte socio </div>
->>>>>>> fff19c5cc163364ba1443be6282b28a0b3b7fd83
 					<div class="panel-body">
 						<!-- Primera fila-->
 						<div class="form-group row">
