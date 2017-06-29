@@ -35,15 +35,8 @@ class FormularioController extends Controller
     }
     public function store(Request $request)   
     {
-        /* Es lo mismo que el create
-        $post = new Post;
-        $post->title = $request->get('title');
-        $post->description = $request->get('description');
-        $post->url = $request->get('url');
-        $post->save();
-        */
-        $form = Formulario::create($request->only('rut','name'));
-        //dd($request->all()); 
+
+        $form = Formulario::create($request->all());
         return redirect()->route('forms_path');
     }
     public function edit(Post $post)
