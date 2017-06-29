@@ -1,9 +1,8 @@
 @extends(Auth::check() ? 'layouts.plat' : 'layouts.inicio')
-
 @php ($pagina = 'formulario')
 
 @section('title')
-Hazte socio
+Formulario
 @endsection
 
 @section('content')

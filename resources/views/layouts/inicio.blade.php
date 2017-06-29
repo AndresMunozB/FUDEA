@@ -33,9 +33,9 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse" style="padding-left: 10em">
                 <!-- Left Side Of Navbar -->
                 <a href="/" class="btn navbar-btn @if($pagina == 'inicio')active @endif" role="button">Inicio</a>
-                <a href="/convenios" class="btn navbar-btn @if($pagina == 'convenios')active @endif" role="button">Convenios</a>
+                <a href="#" class="btn navbar-btn @if($pagina == 'convenios')active @endif" role="button">Convenios</a>
                 <a href=" {{route('create_form_path')}} " class="btn navbar-btn @if($pagina == 'formulario')active @endif" role="button">Formulario</a>
-                <a href="/catastrofes" class="btn navbar-btn @if($pagina == 'desarrolladores')active @endif" role="button">Desarrolladores</a>
+                <a href="#" class="btn navbar-btn @if($pagina == 'desarrolladores')active @endif" role="button">Desarrolladores</a>
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-right">

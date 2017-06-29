@@ -3,7 +3,7 @@
 @php ($pagina = 'solicitudes')
 
 @section('title')
-Catástrofes
+Hazte Socio
 @endsection
 
 @section('content')

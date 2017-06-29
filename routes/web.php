@@ -12,12 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    if(Auth::check()){
+        return redirect()->route('home');
+    }
+    else{
+        return view('welcome');
+    }
 });
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+Route::name('home')->get('/home', 'HomeController@index');
 Route::name('consulta_path')->get('/consulta','ConsultaController@index');
 Route::name('search_consulta_path')->post('/consulta','ConsultaController@search');
 

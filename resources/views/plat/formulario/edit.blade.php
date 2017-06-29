@@ -1,6 +1,8 @@
 @extends('layouts.app1')
 @php ($pagina ='solicitudes')
-
+@section('title')
+Editar usuario
+@endsection
 @section('content')
 	@if(count($errors) > 0 )
 	<div class="alert alert-danger">
